@@ -1,5 +1,56 @@
 (kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 93033315-40ee-4e04-99dd-9e4648f41ce7)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (title_block
+    (title "bunywatt")
+    (date "2023-12-05")
+    (rev "1")
+    (company "minteyay")
+    (comment 1 "adj. linear constant voltage/current source")
+    (comment 2 "main sheet")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 109.22 90.17) (size 24.13 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 255 255 194 1.0000))
+    (uuid 7b1e6463-6c44-47e8-9a6e-fee23a14173b)
+    (property "Sheetname" "power supply" (at 109.22 89.4584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power_supply.kicad_sch" (at 109.22 103.4546 0)
+      (effects (font (size 1.27 1.27)) (justify left top) hide)
+    )
+    (pin "15V_IN" input (at 109.22 92.71 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid b8c6c6b4-f511-4617-b886-668baad6fdbb)
+    )
+    (pin "VREG_OUT" output (at 133.35 92.71 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 5c5f249b-8b45-4ad0-a5e9-dbc89b66356f)
+    )
+    (pin "VSET" input (at 109.22 97.79 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid a6dbb8a8-c157-4b66-83a7-07f7e7c01988)
+    )
+    (pin "ISET" input (at 109.22 100.33 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 788fcd17-2344-4f76-aff0-8705cf3e3347)
+    )
+    (instances
+      (project "bunywatt"
+        (path "/93033315-40ee-4e04-99dd-9e4648f41ce7" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
 )
